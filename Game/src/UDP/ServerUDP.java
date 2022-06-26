@@ -13,10 +13,6 @@ public class ServerUDP extends Thread {
         this.RECEIVEBUF = RECEIVEBUF;
     }
 
-    public static void main(String[] args) {
-        new ServerUDP(8122, new byte[1024]).start();
-    }
-
     public void run() {
         //Создаем порт для Сервера и ограничение буфера, для сообщений
         try (DatagramSocket serverSocket = new DatagramSocket(PORT)) {
