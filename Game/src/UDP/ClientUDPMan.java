@@ -13,10 +13,10 @@ public class ClientUDPMan {
     private final int SERVERPORT;
     private final byte[] RECEIVEGBUF;
 
-    public ClientUDPMan(String ADDRESS, int SERVERPORT, byte[] RECEIVINGMSG) {
+    public ClientUDPMan(String ADDRESS, int SERVERPORT, byte[] RECEIVEGBUF) {
         this.ADDRESS = ADDRESS;
         this.SERVERPORT = SERVERPORT;
-        this.RECEIVEGBUF = RECEIVINGMSG;
+        this.RECEIVEGBUF = RECEIVEGBUF;
     }
 
     public void clientMove() {
